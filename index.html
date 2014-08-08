@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+
+<html lang="es"> 
+<head> 
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navegacion.css">
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" media="all" />
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+
+    <!-- ESTILOS DEL BANNER--> 
+    
+
+
+
+    <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'> 
+    <style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		a {
+			color: #09f;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+		#back_to_camera {
+			clear: both;
+			display: block;
+			height: 80px;
+			line-height: 40px;
+			padding: 20px;
+		}
+		.fluid_container {
+			margin: 0 auto;
+			max-width: 1150px;
+			width: 90%;
+		}
+	</style>
+
+    <!--  SCRIPT DE MODERNIZR-- >
+
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <!--JS DEL BANNER--> 
+    
+    <script type='text/javascript' src='js/jquery.min.js'></script>
+
+    <script src="js/vendor/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+
+    <script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='js/camera.min.js'></script> 
+    
+    <script>
+		jQuery(function(){
+			
+			jQuery('#camera_wrap_1').camera({
+				thumbnails: true,
+                height: '31%',
+                time: '5000'
+			});
+
+		});
+	</script>
+ 
+</head>
+<body>
+
+    <header>
+        <figure>
+            <a href="#">
+                <img src="img/LogotipoGeo.png">
+            </a>
+        </figure>
+        <div>
+            <p>Central: +51(1)315 2910</p>
+            <figure><img src="img/banderaperu.png"></figure>
+            <input type="text" placeholder="Encuentra...">
+            <button> <span class="icon-search"></span> </button>
+        </div>
+        <nav>
+            <ul>
+                <li class="actHover0" id="btnNosotros">
+                    <a href="#">
+                        <p>Nosotros</p>
+                        
+                    </a>
+                </li>
+                <li class="actHover1" id="btnProductos">
+                    <a href="#">
+                        <p>Productos</p>
+                    </a>
+                </li>
+                <li class="actHover2" id="btnServicios">
+                    <a href="#">
+                        <p>Servicios</p>
+                        <img src="img/FlechaAbajo-01.png" class="icoFlecha2">
+                        <img src="img/FlechaAbajo-02.png" class="icoFlechaSelect2">
+                    </a>
+                    <ul id="subNavServicios">
+                        <li class="botonesS"><a href="#">SERVICIO TÉCNICO</a></li>
+                        <li class="botonesS"><a href="#">SERVICIO DE MANTENIMIENTO</a></li>
+                        <li class="botonesS"><a href="#">SERVICIOS DE CALIBRACIÓN</a></li>
+                        <li class="botonesS"><a href="#">GARANTÍAS</a></li>
+                        <li class="botonesSx"><a href="#">OTROS SERVICIOS</a></li>
+                    </ul>
+                </li>
+                <li class="actHover3" id="btnSoluciones">
+                    <a href="#">
+                        <p>Soluciones</p>
+                        <img src="img/FlechaAbajo-01.png" class="icoFlecha3">
+                        <img src="img/FlechaAbajo-02.png" class="icoFlechaSelect3">
+                    </a>
+                    <ul id="subNavSoluciones">
+                        <li class="botonesS"><a href="#">MAPPING</a></li>
+                        <li class="botonesS"><a href="#">MONITOREO</a></li>
+                        <li class="botonesS"><a href="#">ARQUITECTURA</a></li>
+                        <li class="botonesS"><a href="#">CONSTRUCCIÓN</a></li>
+                        <li class="botonesSx"><a href="#">AGRICULTURA</a></li>
+                    </ul>
+                </li>
+                <li class="actHover4" id="btnSoporte">
+                    <a href="#">
+                        <p>Soporte</p>
+                        <img src="img/FlechaAbajo-01.png" class="icoFlecha4">
+                        <img src="img/FlechaAbajo-02.png" class="icoFlechaSelect4">
+                    </a>
+                    <ul id="subNavSoporte">
+                        <li class="botonesS"><a href="#">MANUALES Y GUÍAS</a></li>
+                        <li class="botonesSx"><a href="#">ZONA DE DESCARGAS</a></li>
+                    </ul>
+                </li>
+                <li class="actHover5" id="btnContacto">
+                    <a href="#">
+                        <p>Novedades</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner">
+    	<div class="fluid_container">
+        	
+            <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+                <div data-thumb="images/slides/thumbs/bridge.jpg" data-src="images/slides/bridge.jpg">
+                    <div class="camera_caption fadeFromBottom">
+                        <h1>ESTACIONES<br>TOTALES TRIMBLE</h1>
+                        <h2>Estaciones Totales Mecánicas para trabajos más exigentes y de las mejores marcas.</h2>
+                        <div class="btnBanner"><a href="#">Más Información</a></div>
+                        <span class="fondoBanner"></span>
+                    </div>
+                </div>
+                <div data-thumb="images/slides/thumbs/leaf.jpg" data-src="images/slides/leaf.jpg">
+                    <div class="camera_caption fadeFromBottom">
+                        <h1>ESTACIONES<br>TOTALES TRIMBLE</h1>
+                        <h2>Estaciones Totales Mecánicas para trabajos más exigentes y de las mejores marcas.</h2>
+                        <div class="btnBanner"><a href="#">Más Información</a></div>
+                        <span class="fondoBanner"></span>
+                    </div>
+                </div>
+                <div data-thumb="images/slides/thumbs/road.jpg" data-src="images/slides/road.jpg">
+                    <div class="camera_caption fadeFromBottom">
+                        <h1>ESTACIONES<br>TOTALES TRIMBLE</h1>
+                        <h2>Estaciones Totales Mecánicas para trabajos más exigentes y de las mejores marcas.</h2>
+                        <div class="btnBanner"><a href="#">Más Información</a></div>
+                        <span class="fondoBanner"></span>
+                    </div>
+                </div>
+                <div data-thumb="images/slides/thumbs/sea.jpg" data-src="images/slides/sea.jpg">
+                    <div class="camera_caption fadeFromBottom">
+                        <h1>ESTACIONES<br>TOTALES TRIMBLE</h1>
+                        <h2>Estaciones Totales Mecánicas para trabajos más exigentes y de las mejores marcas.</h2>
+                        <div class="btnBanner"><a href="#">Más Información</a></div>
+                        <span class="fondoBanner"></span>
+                    </div>
+                </div>
+                <div data-thumb="images/slides/thumbs/shelter.jpg" data-src="images/slides/shelter.jpg">
+                    <div class="camera_caption fadeFromBottom">
+                        <h1>ESTACIONES<br>TOTALES TRIMBLE</h1>
+                        <h2>Estaciones Totales Mecánicas para trabajos más exigentes y de las mejores marcas.</h2>
+                        <div class="btnBanner"><a href="#">Más Información</a></div>
+                        <span class="fondoBanner"></span>
+                    </div>
+                </div>
+                <div data-thumb="images/slides/thumbs/tree.jpg" data-src="images/slides/tree.jpg">
+                    <div class="camera_caption fadeFromBottom">
+                        <h1>ESTACIONES<br>TOTALES TRIMBLE</h1>
+                        <h2>Estaciones Totales Mecánicas para trabajos más exigentes y de las mejores marcas.</h2>
+                        <div class="btnBanner"><a href="#">Más Información</a></div>
+                        <span class="fondoBanner"></span>
+                    </div>
+                </div>
+            </div><!-- #camera_wrap_1 -->
+        </div><!-- .fluid_container -->
+    </div>
+
+
+
+    <div class="contenedor">
+        <section class="gridBAR">
+            <div class="botonAccesoRapido" id="btn1">
+                <a href="#">
+                    <img class="cruz" src="img/CruzAzul.png">
+                    <h1>Estaciones Totales</h1>
+                    <p>Lorem ipsum, lorem ipsum.</p>
+                    <img class="cruzSelect1" src="img/CruzAmarilla.png">
+                </a>               
+            </div>
+            <div class="botonAccesoRapido" id="btn2">
+                <a href="#">
+                    <img class="cruz" src="img/CruzAzul.png">
+                    <h1>Sistema GNSS</h1>
+                    <p>Lorem ipsum, lorem ipsum.</p>
+                    <img class="cruzSelect2" src="img/CruzAmarilla.png">
+                </a>               
+            </div>
+            <div class="botonAccesoRapido" id="btn3">
+                <a href="#">
+                    <img class="cruz" src="img/CruzAzul.png">
+                    <h1>Sistemas Geoespaciales</h1>
+                    <p>Lorem ipsum, lorem ipsum.</p>
+                    <img class="cruzSelect3" src="img/CruzAmarilla.png">
+                </a>               
+            </div>
+            <div class="botonAccesoRapido" id="btn4">
+                <a href="#">
+                    <img class="cruz" src="img/CruzAzul.png">
+                    <h1>Accesorios</h1>
+                    <p>Lorem ipsum, lorem ipsum.</p>
+                    <img class="cruzSelect4" src="img/CruzAmarilla.png">
+                </a>               
+            </div>
+        </section>
+        <section class="gridContenido">
+            <article class="formulario">
+                <form>
+                    <h4>CONTÁCTENOS</h4>
+                    <input class="cajonesForm" type="text" placeholder="Nombre y Apellido">
+                    <input class="cajonesForm" type="text" placeholder="Empresa">
+                    <input class="cajonesForm" type="text" placeholder="RUC">
+                    <input class="cajonesForm" type="text" placeholder="Teléfono">
+                    <input class="cajonesForm" type="text" placeholder="Correo electrónico">
+                    <textarea class="cajonesFormB" rows="6" cols="27" placeholder="Mensaje..."></textarea>
+                    <input type="button" class="botonForm"  value="Enviar">
+                </form>
+            </article>
+            <article class="accesosIndustrias">
+
+
+                <!-- Aca va el slider de resumenes-->
+            
+                <div id="ca-container" class="ca-container">
+                    <div class="ca-wrapper">
+                        <div class="ca-item ca-item-1">
+                            <div class="ca-item-main">
+                                <div class="ca-icon"></div>
+                                <h3>TOPOGRAFÍA Y GEO</h3>
+                                <h4>
+                                    <span class="textosDescrip">Al combinar la tecnología de vanguardia, integración de datos y soporte permanente durante todo el ciclo de vida de los proyectos, nos permite ofrecer el aumento de la productividad a los topografos mejorando el flujo de trabajo, capacidades y más</span>
+                                </h4>
+                                    <a href="#" class="ca-more">< ver más ></a>
+                            </div>
+                            <div class="ca-content-wrapper">
+                                <div class="ca-content">
+                                    <h6>Animals are not commodities</h6>
+                                    <a href="#" class="ca-close">close</a>
+                                    <div class="ca-content-text">
+                                        <p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+                                        <p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;</p>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Read more</a></li>
+                                        <li><a href="#">Share this</a></li>
+                                        <li><a href="#">Become a member</a></li>
+                                        <li><a href="#">Donate</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ca-item ca-item-2">
+                            <div class="ca-item-main">
+                                <div class="ca-icon"></div>
+                                <h3>AGRICULTURA</h3>
+                                <h4>
+                                    <span class="textosDescrip">Nuestras tecnologías y soluciones son probadas para funcionar de manera eficiente, ahorrar en costos de los insumos, y mejorar el rendimiento de los cultivos y la productividad con el fin de tomar las mejores decisiones para sus operaciones.</span>
+                                </h4>
+                                    <a href="#" class="ca-more">< ver más ></a>
+                            </div>
+                            <div class="ca-content-wrapper">
+                                <div class="ca-content">
+                                    <h6>Would you eat your dog?</h6>
+                                    <a href="#" class="ca-close">close</a>
+                                    <div class="ca-content-text">
+                                        <p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+                                        <p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;</p>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Read more</a></li>
+                                        <li><a href="#">Share this</a></li>
+                                        <li><a href="#">Become a member</a></li>
+                                        <li><a href="#">Donate</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ca-item ca-item-3">
+                            <div class="ca-item-main">
+                                <div class="ca-icon"></div>
+                                <h3>ARQUITECTURA</h3>
+                                <h4>
+                                    <span class="textosDescrip">Mediante la captura de datos de las estructuras, del vacío, del espacio envuelto y del espacio interior de forma 3 dimensional podemos visualizar y analizar en detalle el entorno de manera virtual. Con las Soluciones de Trimble se pueden</span>
+                                </h4>
+                                    <a href="#" class="ca-more">< ver más ></a>
+                            </div>
+                            <div class="ca-content-wrapper">
+                                <div class="ca-content">
+                                    <h6>You can change the world</h6>
+                                    <a href="#" class="ca-close">close</a>
+                                    <div class="ca-content-text">
+                                        <p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+                                        <p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;</p>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Read more</a></li>
+                                        <li><a href="#">Share this</a></li>
+                                        <li><a href="#">Become a member</a></li>
+                                        <li><a href="#">Donate</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ca-item ca-item-4">
+                            <div class="ca-item-main">
+                                <div class="ca-icon"></div>
+                                <h3>Make a difference</h3>
+                                <h4>
+                                    <span class="textosDescrip">A man is but the product of his thoughts what he thinks, he becomes.</span>
+                                </h4>
+                                    <a href="#" class="ca-more">< ver más ></a>
+                            </div>
+                            <div class="ca-content-wrapper">
+                                <div class="ca-content">
+                                    <h6>Think globally, act locally</h6>
+                                    <a href="#" class="ca-close">close</a>
+                                    <div class="ca-content-text">
+                                        <p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+                                        <p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;</p>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Read more</a></li>
+                                        <li><a href="#">Share this</a></li>
+                                        <li><a href="#">Become a member</a></li>
+                                        <li><a href="#">Donate</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ca-item ca-item-5">
+                            <div class="ca-item-main">
+                                <div class="ca-icon"></div>
+                                <h3>Say no to killing</h3>
+                                <h4>
+                                    <span class="textosDescrip">A weak man is just by accident. A strong but non-violent man is unjust by accident.</span>
+                                </h4>
+                                    <a href="#" class="ca-more">< ver más ></a>
+                            </div>
+                            <div class="ca-content-wrapper">
+                                <div class="ca-content">
+                                    <h6>Animals have rights, too!</h6>
+                                    <a href="#" class="ca-close">close</a>
+                                    <div class="ca-content-text">
+                                        <p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+                                        <p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;</p>
+                                        <p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Read more</a></li>
+                                        <li><a href="#">Share this</a></li>
+                                        <li><a href="#">Become a member</a></li>
+                                        <li><a href="#">Donate</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ca-item ca-item-6">
+                            <div class="ca-item-main">
+                                <div class="ca-icon"></div>
+                                <h3>Don't believe the lies</h3>
+                                <h4>
+                                    <span class="textosDescrip">An error does not become truth by reason of multiplied propagation, nor does truth become error because nobody sees it.</span>
+                                </h4>
+                                    <a href="#" class="ca-more">< ver más ></a>
+                            </div>
+                            <div class="ca-content-wrapper">
+                                <div class="ca-content">
+                                    <h6>How essential is meat?</h6>
+                                    <a href="#" class="ca-close">close</a>
+                                    <div class="ca-content-text">
+                                        <p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+                                        <p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;</p>
+                                        <p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Read more</a></li>
+                                        <li><a href="#">Share this</a></li>
+                                        <li><a href="#">Become a member</a></li>
+                                        <li><a href="#">Donate</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ca-item ca-item-7">
+                            <div class="ca-item-main">
+                                <div class="ca-icon"></div>
+                                <h3>Save the planet</h3>
+                                <h4>
+                                    <span class="textosDescrip">A small body of determined spirits fired by an unquenchable faith in their mission can alter the course of history.</span>
+                                </h4>
+                                    <a href="#" class="ca-more">< ver más ></a>
+                            </div>
+                            <div class="ca-content-wrapper">
+                                <div class="ca-content">
+                                    <h6>Collateral damage?</h6>
+                                    <a href="#" class="ca-close">close</a>
+                                    <div class="ca-content-text">
+                                        <p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+                                        <p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;</p>
+                                        <p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Read more</a></li>
+                                        <li><a href="#">Share this</a></li>
+                                        <li><a href="#">Become a member</a></li>
+                                        <li><a href="#">Donate</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                                
+                <!-- FIN DEL PLUGIN -->
+
+
+            </article>
+            <article class="accesosExtras">
+                <div class="botonAccesoExtras">
+                    <a href="#">
+                        <h5>NOVEDADES Y NOTICIAS</h5>
+                        <span>
+                            <figure>
+                                <img src="img/novedadesnoticias.jpg">
+                            </figure>
+                            <h3>Titulo de la noticia</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type.</p>
+                        </span>
+                    </a>
+                </div>
+                <div class="botonAccesoExtras">
+                    <a href="#">
+                        <h5>SERVICIO TÉCNICO</h5>
+                        <span>
+                            <figure>
+                                <img src="img/serviciotecnico.jpg">
+                            </figure>
+                            <h3>Invitacion al servicio tecnico</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type.</p>
+                        </span>
+                    </a>
+                </div>
+            </article>
+        </section>
+    </div>
+
+
+<!-- ACABA EL CUERPO -->
+
+
+
+    <footer>
+        <div class="foot1">
+            <ul>
+                <li class="botonesFootP">
+                    <p><a href="#">NOSOTROS</a></p>
+                    <ul>
+                        <li class="botonMarcas"><a href="#">Misión y Visión</a></li>
+                        <li class="botonMarcas"><a href="#">Ubicación</a></li>
+                        <li class="botonMarcas"><a href="#">Contáctenos</a></li>
+                        <li class="botonMarcas"><a href="#">Noticias</a></li>
+                        <li class="botonMarcas"><a href="#">Redes Sociales</a></li>
+                        <li class="botonMarcas"><a href="#">Videos</a></li>
+                    </ul>
+                </li>
+                <li class="botonesFootP">
+                    <p><a href="#">PRODUCTOS</a></p>
+                    <ul>
+                        <li class="botonMarcas"><a href="#">Marcas Representadas</a></li>
+                        <li class="botonMarcas"><a href="#">Equipos Nuevos</a></li>
+                        <li class="botonMarcas"><a href="#">Accesorios</a></li>
+                        <li class="botonMarcas"><a href="#">Repuestos</a></li>
+                        <li class="botonMarcas"><a href="#">Promociones</a></li>
+                    </ul>
+                </li>
+                <li class="botonesFootP">
+                    <p><a href="#">SERVICIOS</a></p>
+                    <ul>
+                        <li class="botonMarcas"><a href="#">Servicio Técnico</a></li>
+                        <li class="botonMarcas"><a href="#">Soporte Post Venta</a></li>
+                        <li class="botonMarcas"><a href="#">Programas de Capacitación</a></li>
+                        <li class="botonMarcas"><a href="#">Servicios de Alquiler</a></li>
+                        <li class="botonMarcas"><a href="#">Otros Servicios</a></li>
+                    </ul>
+                </li>
+                <li class="botonesFootP">
+                    <p><a href="#">SOLUCIONES</a></p>
+                    <ul>
+                        <li class="botonMarcas"><a href="#">Topografía y Geodesia</a></li>
+                        <li class="botonMarcas"><a href="#">Minería</a></li>
+                        <li class="botonMarcas"><a href="#">Construcción</a></li>
+                        <li class="botonMarcas"><a href="#">Arquitectura</a></li>
+                        <li class="botonMarcas"><a href="#">Monitoreo</a></li>
+                        <li class="botonMarcas"><a href="#">Agricultura</a></li>
+                        <li class="botonMarcas"><a href="#">Medio Ambiente</a></li>
+                    </ul>
+                </li>
+                <li class="botonesFootP">
+                    <p><a href="#">SOPORTE Y AYUDA</a></p>
+                    <ul>
+                        <li class="botonMarcas"><a href="#">Soporte de Productos</a></li>
+                        <li class="botonMarcas"><a href="#">Descargas</a></li>
+                    </ul>
+                </li>
+                <li class="botonesFootP">
+                    <p><a href="#">PRINCIPALES MARCAS</a></p>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="img/TrimbleComercial.png"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/SpectraComercial.png"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/PentaxComercial.png"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="foot2">
+            <div class="gridFoot2">
+                <div class="pieGeo">
+                    <p>TODOS LOS DERECHOS RESERVADOS ® </p>
+                    <img src="img/LogotipoGeo.png">
+                </div>
+                <div class="gridRedes">
+                    <p>ACOMPAÑANOS EN</p>
+                    <ul class="botoneraRedes">
+                        <li>
+                            <figure id="btn5">
+                                <a href="#">
+                                    <img class="icoFb" src="img/facebook01.png" alt="Hazte fan en Nuestro Fanpage">
+                                    <img class="icoFbcolor" src="img/facebook02.png">
+                                </a>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure id="btn6">
+                                <a href="#">
+                                    <img class="icoT" src="img/Twitter01.png" alt="Siguenos en twitter">
+                                    <img class="icoTcolor" src="img/Twitter02.png" alt="Siguenos en twitter">
+                                </a>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure id="btn7">
+                                <a href="#">
+                                    <img class="icoL" src="img/Linkedin01.png" alt="Siguenos en twitter">
+                                    <img class="icoLcolor" src="img/Linkedin02.png" alt="Siguenos en twitter">
+                                </a>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure id="btn8">
+                                <a href="#">
+                                    <img class="icoY" src="img/Youtube01.png" alt="Siguenos en twitter">
+                                    <img class="icoYcolor" src="img/Youtube02.png" alt="Siguenos en twitter">
+                                </a>
+                            </figure>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="foot3">
+            <div class="gridFoot3">
+                <img src="img/PlaqartCredito.png" alt="Agencia de diseño y desarrollo web">
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- the jScrollPane script -->
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/jquery.contentcarousel.js"></script>
+    <script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+
+    <script type="text/javascript">
+        $('#ca-container').contentcarousel({
+
+            // speed for the sliding animation
+            sliderSpeed     : 500,
+            // easing for the sliding animation
+            sliderEasing    : 'easeOutExpo',
+            // speed for the item animation (open / close)
+            itemSpeed       : 500,
+            // easing for the item animation (open / close)
+            itemEasing      : 'easeOutExpo',
+            // number of items to scroll at a time
+            scroll          : 1 
+
+        });
+
+        
+    </script>
+    <script src="js/main.js"></script>
+
+
+</body> 
+</html>

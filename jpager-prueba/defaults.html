@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>defaults</title>
+  <meta name="description" content="defaults">
+  <meta name="keywords" content="jquery, pagination, javascript, plugin"/>
+  <meta name="author" content="Luís Almeida">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/jPages.css">
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script src="js/jPages.js"></script>
+  <script src="js/underscore.js"></script>
+  <script src="js/main.js"></script>
+  <style type="text/css">
+  .holder {
+    margin: 15px 0;
+  }
+  .holder a {
+    font-size: 12px;
+    cursor: pointer;
+    margin: 0 5px;
+    color: #333;
+  }
+  .holder a:hover {
+    background-color: #222;
+    color: #fff;
+  }
+  .holder a.jp-previous { margin-right: 15px; }
+  .holder a.jp-next { margin-left: 15px; }
+  .holder a.jp-current, a.jp-current:hover {
+    color: #FF4242;
+    font-weight: bold;
+  }
+  .holder a.jp-disabled, a.jp-disabled:hover {
+    color: #bbb;
+  }
+  .holder a.jp-current, a.jp-current:hover,
+  .holder a.jp-disabled, a.jp-disabled:hover {
+    cursor: default;
+    background: none;
+  }
+  .holder span { margin: 0 5px; }
+  </style>
+</head>
+<body>
+  <div id="author">
+    You can follow me on <a href="https://twitter.com/lmgalmeida">@twitter</a> or <a href="https://github.com/luis-almeida">@github</a> and you may also like <a href="http://luis-almeida.github.com/filtrify/">filtrify</a>
+  </div>
+  <div id="container" class="clearfix">
+    <div id="sidebar">
+      <h1 id="header">jPages</h1>
+      <ul id="menu">
+        <li><a href="http://luis-almeida.github.com/jPages/">Info</a></li>
+        <li><a href="documentation.html">documentation</a></li>
+
+        <li><a href="download.html">download</a></li>
+      </ul>
+      <h2>Examples</h2>
+      <ul>
+        <li class="selected"><a href="defaults.html">defaults</a></li>
+        <li><a href="pagination.html">pagination</a></li>
+        <li><a href="itemsperpage.html">items per page</a></li>
+        <li><a href="customizebuttons.html">customize buttons</a></li>
+        <li><a href="custombuttons.html">custom buttons</a></li>
+        <li><a href="blanklinks.html">blank links</a></li>
+        <li><a href="titlelinks.html">title links</a></li>
+        <li><a href="keybrowse.html">key browse</a></li>
+        <li><a href="scrollbrowse.html">scroll browse</a></li>
+        <li><a href="auto.html">auto</a></li>
+        <li><a href="direction.html">direction</a></li>
+        <li><a href="cssanimation.html">css animation</a></li>
+        <li><a href="jqueryanimation.html">jQuery animation</a></li>
+        <li><a href="callback.html">callback</a></li>
+        <li><a href="jumptopage.html">jump to page</a></li>
+        <li><a href="destroy.html">destroy</a></li>
+        <li><a href="lazyload.html">lazy load</a></li>
+      </ul>
+      <h2>Demos</h2>
+      <ul>
+        <li><a href="mosaic.html">mosaic</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+        <li><a href="table.html">table</a></li>
+      </ul>
+      <div class="share">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://luis-almeida.github.com/jPages/" data-text="jPages" data-via="lmgalmeida" data-hashtags="jQuery">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+    </div>
+    <!--! end of #sidebar -->
+    <div id="content" class="defaults">
+      <h2>Defaults</h2>
+      <p>
+        jPages require only a valid item container ID to initialize. You must apply the plugin to the element(s) that will hold the navigation links.
+      </p>
+
+
+
+
+<!-- *****//// ACA EMPIEZA MI WIDGET /////////*********-->
+
+
+
+      <!-- navigation holder -->
+      <div class="holder">
+      </div>
+      <!-- item container -->
+      <div class="vitrina" id="itemContainer">
+
+<!--          <div>
+              <figure>
+                  <img src="#">
+              </figure>
+              <h1>Nombre de Equipo</h1>
+              <h2>Descripcion breve del equipo en dos lineas como máximo.</h2>
+              <a href="#"> < ver más > </a>
+          </div>
+          <div>
+              <figure>
+                  <img src="#">
+              </figure>
+              <h1>Nombre de Equipo</h1>
+              <h2>Descripcion breve del equipo en dos lineas como máximo.</h2>
+              <a href="#"> < ver más > </a>
+          </div>
+          <div>
+              <figure>
+                  <img src="#">
+              </figure>
+              <h1>Nombre de Equipo</h1>
+              <h2>Descripcion breve del equipo en dos lineas como máximo.</h2>
+              <a href="#"> < ver más > </a>
+          </div>
+          <div>
+              <figure>
+                  <img src="#">
+              </figure>
+              <h1>Nombre de Equipo</h1>
+              <h2>Descripcion breve del equipo en dos lineas como máximo.</h2>
+              <a href="#"> < ver más > </a>
+          </div>
+          <div>
+              <figure>
+                  <img src="#">
+              </figure>
+              <h1>Nombre de Equipo</h1>
+              <h2>Descripcion breve del equipo en dos lineas como máximo.</h2>
+              <a href="#"> < ver más > </a>
+          </div>
+          <div>
+              <figure>
+                  <img src="#">
+              </figure>
+              <h1>Nombre de Equipo</h1>
+              <h2>Descripcion breve del equipo en dos lineas como máximo.</h2>
+              <a href="#"> < ver más > </a>
+          </div>
+          <div>
+              <figure>
+                  <img src="#">
+              </figure>
+              <h1>Nombre de Equipo</h1>
+              <h2>Descripcion breve del equipo en dos lineas como máximo.</h2>
+              <a href="#"> < ver más > </a>
+          </div>
+-->    
+      </div>      
+      <!-- navigation holder -->
+      <div class="holder">
+      </div>
+
+
+
+
+
+
+
+    </div>
+    <!--! end of #content -->
+  </div>
+  <!--! end of #container -->
+ 
+ 
+
+  <script type="text/template" id="items-template">
+  <%_.each(conexionTemplate, function(variableLlave){%>
+      <div>
+          <figure>
+              <img src=<%= variableLlave.IMG %>>
+          </figure>
+          <h1><%= variableLlave.NOMBRE %></h1>
+          <h2><%= variableLlave.SUBTITULO %></h2>
+          <a href="#"> < ver más > </a>
+      </div>
+  <%});%>
+
+  </script>
+
+  
+</body>
+</html>

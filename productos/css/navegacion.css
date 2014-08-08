@@ -1,0 +1,14 @@
+body
+	header
+		nav
+		{
+			background: #dfdfdf;
+			background: -moz-linear-gradient(top,  #dfdfdf 44%, #c5c5c5 51%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(44%,#dfdfdf), color-stop(51%,#c5c5c5));
+			background: -webkit-linear-gradient(top,  #dfdfdf 44%,#c5c5c5 51%);
+			background: -o-linear-gradient(top,  #dfdfdf 44%,#c5c5c5 51%);
+			background: -ms-linear-gradient(top,  #dfdfdf 44%,#c5c5c5 51%);
+			background: linear-gradient(to bottom,  #dfdfdf 44%,#c5c5c5 51%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfdfdf', endColorstr='#c5c5c5',GradientType=0 );
+
+		}
